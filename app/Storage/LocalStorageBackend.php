@@ -21,6 +21,7 @@ public function save($id, $data, $size)
         'created_at' => now()->toDateTimeString(),
     ];
     file_put_contents($filePath, json_encode($payload));
+    return $payload;
 }
 
     public function retrieve($id)

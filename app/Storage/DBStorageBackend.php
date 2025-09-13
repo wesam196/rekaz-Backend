@@ -22,7 +22,10 @@ class DBStorageBackend {
             'created_at' => now()
         ]);
 
-        
+        return [
+        'size' => $size,
+        'created_at' => now()->toDateTimeString(),
+    ];
     }
 
    public function retrieve($id)

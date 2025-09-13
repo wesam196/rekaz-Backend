@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('blobs_data', function (Blueprint $table) {
             $table->string('id')->unique();
-            //$table->string('blob_id')->unique();
             $table->longText('data'); 
             $table->bigInteger('size');
             $table->timestamps();
